@@ -1,0 +1,26 @@
+plugins {
+    id 'application'
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation  group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.6'
+}
+
+jar {
+  manifest {
+    attributes 'Main-Class': 'employee.EmployeeApp'
+  }
+}
+
+apply plugin: 'application'
+mainClassName = 'employee.EmployeeApp'
+
+println 'This is executed during configuration phase'
+task configured {
+    println 'The project is configured'
+}
