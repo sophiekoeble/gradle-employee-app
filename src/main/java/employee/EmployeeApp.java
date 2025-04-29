@@ -11,25 +11,7 @@ public class EmployeeApp {
     public static void main(String[] args) {
 
         PersonalData personalData = new PersonalData();
-        personalData.main();
-
-
-        // Employee john = new Employee();
-        // Employee jack = new Employee();
-        // Employee hans = new Employee();
-        
-
-        // john.setName("John");
-        // john.setEmailAddress("john@baeldung.com");
-        // john.setYearOfBirth(1978);
-
-        // john.log();
-        // jack.log();
-        // hans.log();
-
-        // logger.info("Name: " + john.getName());
-        // logger.info("Email Address: " + john.getEmailAddress());
-        // logger.info("Year of Birth: " + john.getYearOfBirth());
+        personalData.loadEmployeesFromCSV();
 
         System.exit(0);
     }
