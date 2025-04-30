@@ -1,7 +1,8 @@
 package employee;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -22,11 +23,11 @@ public class PersonalData {
 
     @PostConstruct
     public void loadEmployeesFromCSV() {
+        var inputStream = getClass().getClassLoader().getResourceAsStream("Employees.csv");
         
-        var file = "src\\main\\resources\\Employees.csv";
-
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(file));
+            InputStreamReader streamReader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
+            BufferedReader reader = new BufferedReader(streamReader);
             List<String> data = reader.lines().collect(Collectors.toList());
            
             for (var line : data) {
