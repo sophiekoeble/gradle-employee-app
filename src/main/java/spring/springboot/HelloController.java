@@ -1,9 +1,10 @@
 package spring.springboot;
 
-//import java.util.List;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import employee.Employee;
@@ -13,7 +14,7 @@ import employee.PersonalData;
 public class HelloController {
 
   private final PersonalData personalData;
-  public static String newline = System.getProperty("line.separator");
+  public static final Logger logger = LoggerFactory.getLogger(HelloController.class);
 
   @Autowired
   public HelloController(PersonalData personalData) {
@@ -21,16 +22,31 @@ public class HelloController {
   }
   
     @GetMapping("/getEmployees")
-    public String index() {
+    public String getEmployees() {
       String output = "";
 
       for (Employee employee : personalData.getEmployees()) {
         employee.log();
-        output += "Name: " + employee.getName() + newline + ", E-Mail: " + employee.getEmailAddress() + ", Year of Birth: " + employee.getYearOfBirth();
+        output += "Name: " + employee.getName() +  ", E-Mail: " + employee.getEmailAddress() + ", Year of Birth: " + employee.getYearOfBirth() + " ";
       }
 
       return output;
       // return personalData.getEmployees().toString();
+    }
+
+    @GetMapping("/getEmployee/{name}")
+    public String getEmployee(@PathVariable String name) {
+      String output = "person not found!";
+      logger.info(output);
+
+      for (Employee employee : personalData.getEmployees()) {
+        if (String.valueOf(employee.getName()).equals(name)) {
+          output = "Name: " + employee.getName() +  ", E-Mail: " + employee.getEmailAddress() + ", Year of Birth: " + employee.getYearOfBirth() + " ";
+        }
+      
+      }
+
+      return output;
     }
 }
 

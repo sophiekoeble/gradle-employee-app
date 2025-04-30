@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="spring.springboot.SpringbootApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-04-30T09:47:58.482Z" hostname="PCPADMINI5H034" time="0.95">
+<testsuite name="spring.springboot.SpringbootApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-04-30T12:18:02.743Z" hostname="PCPADMINI5H034" time="0.92">
   <properties/>
-  <testcase name="contextLoads()" classname="spring.springboot.SpringbootApplicationTests" time="0.95"/>
-  <system-out><![CDATA[11:47:55.807 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [spring.springboot.SpringbootApplicationTests]: SpringbootApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-11:47:55.968 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration spring.springboot.Application for test class spring.springboot.SpringbootApplicationTests
+  <testcase name="contextLoads()" classname="spring.springboot.SpringbootApplicationTests" time="0.92"/>
+  <system-out><![CDATA[14:18:00.476 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [spring.springboot.SpringbootApplicationTests]: SpringbootApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:18:00.725 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration spring.springboot.Application for test class spring.springboot.SpringbootApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -14,18 +14,21 @@
 
  :: Spring Boot ::                (v3.4.5)
 
-2025-04-30T11:47:56.650+02:00  INFO 16420 --- [springboot] [    Test worker] s.springboot.SpringbootApplicationTests  : Starting SpringbootApplicationTests using Java 21 with PID 16420 (started by skoble in C:\Users\skoble\workspace\gradle-employee-app)
-2025-04-30T11:47:56.653+02:00  INFO 16420 --- [springboot] [    Test worker] s.springboot.SpringbootApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2025-04-30T11:47:57.643+02:00  INFO 16420 --- [springboot] [    Test worker] employee.Employee                        : Name: John
-2025-04-30T11:47:57.644+02:00  INFO 16420 --- [springboot] [    Test worker] employee.Employee                        : Email Address: john@baeldung.com
-2025-04-30T11:47:57.646+02:00  INFO 16420 --- [springboot] [    Test worker] employee.Employee                        : Year of Birth: 1978
-2025-04-30T11:47:57.646+02:00  INFO 16420 --- [springboot] [    Test worker] employee.Employee                        : Name: Jack
-2025-04-30T11:47:57.647+02:00  INFO 16420 --- [springboot] [    Test worker] employee.Employee                        : Email Address: jack.jones@cern.ch
-2025-04-30T11:47:57.647+02:00  INFO 16420 --- [springboot] [    Test worker] employee.Employee                        : Year of Birth: 1955
-2025-04-30T11:47:57.647+02:00  INFO 16420 --- [springboot] [    Test worker] employee.Employee                        : Name: Hans
-2025-04-30T11:47:57.648+02:00  INFO 16420 --- [springboot] [    Test worker] employee.Employee                        : Email Address: hansi.k@gmail.com
-2025-04-30T11:47:57.648+02:00  INFO 16420 --- [springboot] [    Test worker] employee.Employee                        : Year of Birth: 1900
-2025-04-30T11:47:58.455+02:00  INFO 16420 --- [springboot] [    Test worker] s.springboot.SpringbootApplicationTests  : Started SpringbootApplicationTests in 2.166 seconds (process running for 3.96)
+2025-04-30T14:18:01.298+02:00  INFO 18940 --- [springboot] [    Test worker] s.springboot.SpringbootApplicationTests  : Starting SpringbootApplicationTests using Java 21 with PID 18940 (started by skoble in C:\Users\skoble\workspace\gradle-employee-app)
+2025-04-30T14:18:01.299+02:00  INFO 18940 --- [springboot] [    Test worker] s.springboot.SpringbootApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-04-30T14:18:02.162+02:00  INFO 18940 --- [springboot] [    Test worker] employee.Employee                        : Name: John
+2025-04-30T14:18:02.162+02:00  INFO 18940 --- [springboot] [    Test worker] employee.Employee                        : Email Address: john@baeldung.com
+2025-04-30T14:18:02.164+02:00  INFO 18940 --- [springboot] [    Test worker] employee.Employee                        : Year of Birth: 1978
+2025-04-30T14:18:02.164+02:00  INFO 18940 --- [springboot] [    Test worker] employee.Employee                        : Name: Jack
+2025-04-30T14:18:02.164+02:00  INFO 18940 --- [springboot] [    Test worker] employee.Employee                        : Email Address: jack.jones@cern.ch
+2025-04-30T14:18:02.164+02:00  INFO 18940 --- [springboot] [    Test worker] employee.Employee                        : Year of Birth: 1955
+2025-04-30T14:18:02.164+02:00  INFO 18940 --- [springboot] [    Test worker] employee.Employee                        : Name: Hans
+2025-04-30T14:18:02.164+02:00  INFO 18940 --- [springboot] [    Test worker] employee.Employee                        : Email Address: hansi.k@gmail.com
+2025-04-30T14:18:02.164+02:00  INFO 18940 --- [springboot] [    Test worker] employee.Employee                        : Year of Birth: 1900
+2025-04-30T14:18:02.164+02:00  INFO 18940 --- [springboot] [    Test worker] employee.Employee                        : Name: Georg
+2025-04-30T14:18:02.165+02:00  INFO 18940 --- [springboot] [    Test worker] employee.Employee                        : Email Address: georg.green@gmx.de
+2025-04-30T14:18:02.165+02:00  INFO 18940 --- [springboot] [    Test worker] employee.Employee                        : Year of Birth: 1983
+2025-04-30T14:18:02.721+02:00  INFO 18940 --- [springboot] [    Test worker] s.springboot.SpringbootApplicationTests  : Started SpringbootApplicationTests in 1.769 seconds (process running for 3.511)
 ]]></system-out>
   <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
 WARNING: A Java agent has been loaded dynamically (C:\Users\skoble\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.15.11\a38b16385e867f59a641330f0362ebe742788ed8\byte-buddy-agent-1.15.11.jar)
