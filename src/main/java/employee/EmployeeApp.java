@@ -1,13 +1,9 @@
 package employee;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-// @SpringBootApplication
+@SpringBootApplication
 public class EmployeeApp {
-
-    private static final Logger logger = LoggerFactory.getLogger(EmployeeApp.class);
-
 
     public static void main(String[] args) {
 
