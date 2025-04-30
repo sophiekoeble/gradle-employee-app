@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import jakarta.annotation.PostConstruct;
 
@@ -43,6 +44,7 @@ public class PersonalData {
         
     }
 
+    @GetMapping("/employees")
     public List<Employee> getEmployees() {
         return this.employees;
     }

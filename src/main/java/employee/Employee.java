@@ -46,5 +46,11 @@ public class Employee {
         logger.info("Year of Birth: " + getYearOfBirth());
     }
 
+
+    // @Override
+    // public String toString() {
+    //     return name + ", " + emailAddress + ", " + yearOfBirth + "\n";
+    // }
+
 }
 
