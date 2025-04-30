@@ -37,7 +37,7 @@ public class HelloController {
     @GetMapping("/getEmployee/{name}")
     public String getEmployee(@PathVariable String name) {
       String output = "person not found!";
-      logger.info(output);
+      logger.error(name);
 
       for (Employee employee : personalData.getEmployees()) {
         if (String.valueOf(employee.getName()).equals(name)) {
