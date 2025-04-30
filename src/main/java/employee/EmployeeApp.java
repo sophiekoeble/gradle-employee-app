@@ -3,6 +3,7 @@ package employee;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+// @SpringBootApplication
 public class EmployeeApp {
 
     private static final Logger logger = LoggerFactory.getLogger(EmployeeApp.class);
