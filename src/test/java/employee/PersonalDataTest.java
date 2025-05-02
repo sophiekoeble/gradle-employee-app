@@ -16,7 +16,7 @@ public class PersonalDataTest {
         PersonalData personalData = new PersonalData();
         personalData.loadEmployeesFromCSV();
 
-        assertEquals(4, personalData.getEmployees().size());
+        assertEquals(5, personalData.getEmployees().size());
         for (Employee testEmployee : personalData.getEmployees()) {
             assertNotNull(testEmployee);
             assertNotNull(testEmployee.getName());
