@@ -22,7 +22,8 @@ Open two terminals in Visual Studio Code
 ./gradlew build --continuous
 ./gradlew bootRun
 ```
-To actualise 
+## Local Host
+http://localhost:8080/
 
 
 ## Integrate with your tools
