@@ -1,11 +1,15 @@
 package spring.springboot;
 
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import employee.Employee;
 import employee.PersonalData;
 
 @Controller
@@ -31,5 +35,21 @@ public class GreetingController {
 
       return "employees";
     }
+
+    @GetMapping("/employees/{name}")
+    public String employees(@PathVariable String name, Model model) {
+        var listEmployees = new ArrayList<>();
+
+        for (Employee employee : personalData.getEmployees()) {
+            if (employee.getName().equals(name)) {
+                listEmployees.add(employee);
+            }
+        }
+
+        model.addAttribute("employees", listEmployees);
+
+        return "employees";
+    }
+    
 
 }
