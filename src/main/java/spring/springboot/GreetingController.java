@@ -43,6 +43,9 @@ public class GreetingController {
         for (Employee employee : personalData.getEmployees()) {
             if (employee.getName().equals(name)) {
                 listEmployees.add(employee);
+            } else if (String.valueOf(employee.getYearOfBirth()).equals(name)) {
+                listEmployees.add(employee);
+
             }
         }
 
